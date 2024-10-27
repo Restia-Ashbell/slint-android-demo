@@ -1,0 +1,13 @@
+[package]
+name = "calculator-rs"
+version = "0.1.0"
+edition = "2021"
+
+
+[lib]
+crate-type = ["cdylib"]
+ 
+ 
+[dependencies]
+slint = { version = "1.8", features = ["backend-android-activity-06"] }
+i-slint-backend-android-activity = { version = "=1.8.0", features = ["native-activity"] }
