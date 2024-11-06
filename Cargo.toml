@@ -6,7 +6,14 @@ edition = "2021"
 
 [lib]
 crate-type = ["cdylib"]
- 
- 
+
+[profile.dev]
+debug = false
+debug-assertions = false
+overflow-checks = false
+incremental = false
+opt-level = 3
+lto = true
+
 [dependencies]
 slint = { version = "1.8", features = ["backend-android-activity-06"] }
