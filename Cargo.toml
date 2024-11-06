@@ -17,3 +17,7 @@ lto = true
 
 [dependencies]
 slint = { version = "1.8", features = ["backend-android-activity-06"] }
+
+[package.metadata.android.sdk]
+min_sdk_version = 23
+target_sdk_version = 35
